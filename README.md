@@ -2,8 +2,6 @@
 
 Port para TV Samsung de la versión modificada de Xuper TV (`com.notyitan.tv`).
 
-**Créditos:** basado en el port de webOS de **CristianDev**, que autorizó su uso y modificación. Proyecto no oficial, sin relación con Xuper TV, Samsung ni LG. No incluye contenido audiovisual.
-
 ## Cómo funciona
 
 Las TV Samsung no pueden ejecutar el servicio Node que en LG corre dentro de la TV. Por eso se divide en dos:
