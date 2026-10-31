@@ -1,0 +1,8 @@
+{
+  "name": "xupertv-server",
+  "version": "1.0.0",
+  "description": "Servidor local para la app de TV Samsung",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "private": true
+}
