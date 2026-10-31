@@ -32,6 +32,16 @@ Tiene que quedar encendido mientras uses la app. Puertos: 8910 (API), 8787 (rela
 3. Instala [Tizen Studio](https://developer.tizen.org/development/tizen-studio/download) con *TV Extensions*, y crea un certificado Samsung (Certificate Manager).
 4. Abre `tizen/` como proyecto Web (o `tizen package -t wgt -- tizen/`), conecta la TV (`sdb connect IP_DE_LA_TV`) y ejecuta *Run As → Tizen Web Application*.
 
+## Instalar desde Windows
+
+1. Instala Node.js y ffmpeg: `winget install OpenJS.NodeJS.LTS` y `winget install Gyan.FFmpeg`.
+2. Descarga este repo (Code → Download ZIP) y extráelo.
+3. Doble clic en **`INICIAR-SERVIDOR.bat`** y deja la ventana abierta. Si el Firewall pregunta, permite el acceso. Si detecta mal la IP, ábrelo desde una terminal: `INICIAR-SERVIDOR.bat 192.168.1.95`.
+4. Doble clic en **`CONFIGURAR.bat`** e indica la IP del PC.
+5. Abre la carpeta `tizen/` en Tizen Studio (versión Windows) e instálala en la TV, como en los pasos de arriba.
+
+> Los `.bat` y la compatibilidad con Windows **no están probados en un Windows real**.
+
 ## Estado
 
 - Servidor: probado en Linux (`ping`, sesión y categorías de canales responden).

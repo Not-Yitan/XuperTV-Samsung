@@ -33,5 +33,5 @@ var Service = require("webos-service");
 require("./index.js");
 Service.listen(PORT, "0.0.0.0", function () {
   console.log("[xuper-server] escuchando en http://" + process.env.XUPER_PUBLIC_HOST + ":" + PORT);
-  console.log("[xuper-server] ffmpeg: " + (process.env.FFMPEG_PATH || "/usr/bin/ffmpeg"));
+  console.log("[xuper-server] ffmpeg: " + (process.env.FFMPEG_PATH || (process.platform === "win32" ? "ffmpeg.exe (junto al servidor)" : "/usr/bin/ffmpeg")));
 });
