@@ -40,6 +40,10 @@ Tiene que quedar encendido mientras uses la app. Puertos: 8910 (API), 8787 (rela
 
 > Los `.bat` y la compatibilidad con Windows **no están probados en un Windows real**.
 
+## Modo TV antigua (H.264)
+
+Para TV LG webOS 1 a 3 (ver `XuperTV-webOS-Legacy`), que no reproducen H.265: `./iniciar-servidor.sh --tv-antigua` (Linux) o `INICIAR-SERVIDOR-TV-ANTIGUA.bat` (Windows). El servidor convierte todo el video a H.264 + AAC (máx. 1080p) con `ffmpeg`, así que usa bastante CPU. Variables: `XUPER_TRANSCODE=1` y `XUPER_FORCE_RELAY=1`.
+
 ## Estado
 
 - Servidor: probado en Linux (`ping`, sesión y categorías de canales responden).
